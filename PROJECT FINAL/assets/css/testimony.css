@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image: url(../img/blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clear_fix{
+   clear: both;
+}
+
+.aboutus{
+  width: 720px;
+  height: auto;
+  margin: 120px auto;
+}
+
+.aboutus .item{
+  width: 220px;
+  margin: 0 10px;
+  float: left;
+  background: #6ddcf0;
+  box-shadow: 0 0 5px rgba(0,0,0,.125);
+  border-radius: 25px;
+}
+
+.aboutus .item .img{
+  padding: 20px;
+}
+
+.aboutus .item .img img{
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutus .item .name{
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.aboutus .item .content{
+  background: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+.aboutus .item .content h1{
+  margin-bottom: 10px;
+  color: #6ddcf0;
+}
+
+.aboutus .item .content p{
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.aboutus .item .content .stars img{
+  width: 25px;
+
+}

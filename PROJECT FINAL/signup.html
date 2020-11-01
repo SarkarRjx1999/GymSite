@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Login</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       body:before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/img/cover.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);
+        } 
+        .signup-form
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 618px;
+            padding: 78px 23px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
+        }
+        .avatar {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-60px/2);
+            left: calc(50% - 40px);
+        }
+        .signup-form h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .signup-form p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .signup-form input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .signup-form input[type="text"],
+        .signup-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .signup-form input[type="submit"] {
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            background: red;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 15%;
+        }
+        .signup-form a
+        {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+         input[type="checkbox"] {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+     <header>
+     <h2><a href="index.html">FITNXX <span>GYM</span> </a></h2>
+     <nav>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       <li><a href="signup.html">SIGN UP</a></li>
+       <li><a href="login.html">SIGN IN</a></li>
+     </nav>
+    </header>
+    <div class="signup-form">
+
+        <img src="assets/img/avatar.png" class="avatar">
+        <h2>Sign Up</h2>
+        <form>
+            <p>Name</p>
+            <input type="text" name="" placeholder="Enter Name" required>
+
+            <p>Email</p>
+            <input type="text" name="" placeholder="Enter Email" required>
+
+            <p>Password</p>
+            <input type="password" placeholder="Enter Password" required>
+
+            <p></p>
+            <input type="password" name="" placeholder="Re-Enter Password" required>
+
+            <input type="submit" value="Sign Up">
+           <p><input type="checkbox">I hereby accept terms & conditions</p>  
+         </form>
+    </div>
+</body>
+</html>
